@@ -25,14 +25,14 @@ float calculate(float x, int n) {
 			y = 0;
 			for (int i = 1; i <= n - 1; i++) {
 				for (int j = 1; j <= n; j++) {
-					y += x - i * i + j;
+					y += x - i * i + j + j;
 				}
 			}
 		}
 		else {
 			y = 0;
 			for (int i = 0; i <= n - 1; i++) {
-				y += (x - 1) / (i + 1);
+				y += (x - 1) / (i + 1) +32;
 			}
 		}
 		return y;
